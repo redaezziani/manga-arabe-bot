@@ -4,6 +4,9 @@ import Stealth from 'puppeteer-extra-plugin-stealth';
 import fs from 'fs';
 import pdfkit from 'pdfkit';
 import { Telegraf } from 'telegraf';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 puppeteerExtra.use(Stealth());
 
@@ -51,7 +54,7 @@ const makePdf = async (mangaName, mangaChapter) => {
 
 
 
-const bot = new Telegraf(''); // Replace with your Telegram bot token
+const bot = new Telegraf(process.env.MANGA_TELEGRAM_SECRET_KEY);
 
 bot.start((ctx) => {
     ctx.reply('Welcome to Manga Bot. To get a manga, send /getmanga');
