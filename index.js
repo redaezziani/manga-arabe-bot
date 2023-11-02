@@ -52,3 +52,7 @@ bot.on('text', async (ctx) => {
 });
 
 bot.launch();
+
+
+
+
