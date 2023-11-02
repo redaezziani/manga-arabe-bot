@@ -1,4 +1,6 @@
-<h1>Telegram bot manga </h1>
+<h1
+style="color: #f00;"
+>Telegram bot manga </h1>
 <p>Telegram bot for get manga i a pdf format </p>
 
 <h2>How to use</h2>
@@ -6,6 +8,9 @@
 <p>First you need to install the requirements</p>
 
 run in the terminal : npm i
+
+
+then create a bot in telegram with the botfather and get the token
 
 then you need to create a .env file with the next variables 
 
