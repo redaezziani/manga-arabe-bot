@@ -2,6 +2,7 @@ import userAgent from 'user-agents';
 import puppeteerExtra from 'puppeteer-extra';
 import Stealth from 'puppeteer-extra-plugin-stealth';
 import fs from 'fs';
+import  makePdf from'./makePdf.js';
 puppeteerExtra.use(Stealth());
 
 
@@ -36,3 +37,5 @@ const getManga = async (mangaName, mangaChapter) => {
       await browser.close();
       await makePdf(mangaName, mangaChapter);
 };
+
+export default getManga;

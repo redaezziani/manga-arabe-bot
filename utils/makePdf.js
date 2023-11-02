@@ -17,3 +17,6 @@ const makePdf = async (mangaName, mangaChapter) => {
     doc.pipe(fs.createWriteStream(`${mangaName}-${mangaChapter}.pdf`));
     doc.end();
 };
+
+
+export default makePdf;

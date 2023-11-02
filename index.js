@@ -3,9 +3,8 @@ import fs from 'fs';
 import { Telegraf } from 'telegraf';
 import dotenv from 'dotenv';
 dotenv.config();
-import'./utils/getManga.js';
-import'./utils/removeTrash.js';
-import'./utils/makePdf.js';
+import getManga from'./utils/getManga.js';
+import removeTrash from'./utils/removeTrash.js';
 
 const bot = new Telegraf(process.env.MANGA_TELEGRAM_SECRET_KEY);
 
